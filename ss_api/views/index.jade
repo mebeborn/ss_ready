@@ -2,7 +2,25 @@ doctype
 html
   head
     title CRUD
+    style(type='text/css').
+      table {
+        width: 100%;
+        background-color: #FFFFFF;
+        border-collapse: collapse;
+        border-width: 2px;
+        border-color: #7ea8f8;
+        border-style: solid;
+        color: #000000;
+      }
+
+      td,th {
+        border-width: 2px;
+        border-color: #7ea8f8;
+        border-style: solid;
+        padding: 5px;
+      }
   body
+
 
   form(action="/api/add", method='post')
     input(placeholder='Firstname', name='firstName')
