@@ -1,0 +1,26 @@
+{
+  "name": "ss_homework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mebeborn/ss_homework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mebeborn/ss_homework/issues"
+  },
+  "homepage": "https://github.com/mebeborn/ss_homework#readme",
+  "dependencies": {
+    "mustache": "^3.0.1"
+  },
+  "devDependencies": {
+    "jasmine": "^3.3.1"
+  }
+}

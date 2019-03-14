@@ -1,0 +1,27 @@
+doctype
+html
+  head
+    title CRUD
+  body
+
+  form(action="/api/add", method='post')
+    input(placeholder='Firstname', name='firstName')
+    input(placeholder='Lastname', name='lastName')
+    input(type='submit', value='Add')
+    
+    br
+    br
+
+  table
+    tbody
+      each student in students
+        tr
+          td= student.firstName
+          td= student.lastName
+          td 
+            form(action='/api/edit/'+student.id, method='get')
+              input(type='submit', value='Edit')
+            form(action='/api/delete', method='post')
+              input(type='hidden', name='id', value=student.id)
+              input(type='submit', value='Delete')
+
